@@ -28,7 +28,7 @@ public class SaleController {
         return saleService.findSales(minDate, maxDate, pageable);
     }
 
-    @GetMapping("/{id}/notication")
+    @GetMapping("/{id}/notification")
     public void notifySms(@PathVariable Long id) {
         smsService.sendSms(id);
     }
